@@ -1,0 +1,39 @@
+{
+    "serviceName": "demoservice",
+    "serviceGroup": "TestGroup",
+    "servicePort": 6002,
+    "serviceVersion": "1.0",
+
+    "description": "Demo Microservice",
+
+    "tags": ["test", "API"],
+    "attributes": {
+        "App-Type": ["microservice"],
+        "API-Type": ["REST"],
+		"APP-Type": ["Demo"]
+    },
+    "program": ["Diagnostics"],
+
+    "maintenance": {
+        "port": {
+            "type": "inherit"
+        },
+        "readiness": "/heartbeat"
+    },
+
+    "type": "service",
+    "prerequisites": {
+        "cpu": " ",
+        "memory": " "
+    },
+
+    "requestTimeout": 30,
+    "requestTimeoutRenewal": 5,
+
+    "extKeyRequired": true,
+    "oauth": true,
+    "urac": true,
+    "urac_Profile": true,
+    "urac_ACL": false,
+    "provision_ACL": false
+}
