@@ -12,7 +12,7 @@
         "API-Type": ["REST"],
 		"APP-Type": ["Demo"]
     },
-    "program": ["Diagnostics"],
+    "program": ["Test"],
 
     "maintenance": {
         "port": {
