@@ -8,9 +8,8 @@
 
     "tags": ["test", "API"],
     "attributes": {
-        "App-Type": ["microservice"],
-        "API-Type": ["REST"],
-		"APP-Type": ["Demo"]
+        "App-Type": ["microservice", "demo"],
+        "API-Type": ["REST"]
     },
     "program": ["Test"],
 
