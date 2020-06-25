@@ -16,12 +16,3 @@ paths:
         responses:
             200:
                description: OK
-   /getData:
-        get:
-            tags:
-             - Data Service
-            summary: return available data
-            operationId: getData
-        responses:
-            200:
-               description: OK
