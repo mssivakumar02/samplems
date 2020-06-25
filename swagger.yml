@@ -12,7 +12,7 @@ paths:
             tags:
              - Health Service
             summary: Checks if the test control unit is available
-            operationId: getHealth_1
+            operationId: getHealth
         responses:
             200:
                description: OK
@@ -21,7 +21,7 @@ paths:
             tags:
              - Data Service
             summary: return available data
-            operationId: getData_1
+            operationId: getData
         responses:
             200:
                description: OK
