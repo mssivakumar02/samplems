@@ -4,7 +4,7 @@
     "servicePort": 6002,
     "serviceVersion": "1.0",
 
-    "description": "Demo Microservice",
+    "description": "Demo Microservice for SOAJS",
 
     "tags": ["test", "API"],
     "attributes": {
