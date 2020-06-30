@@ -28,4 +28,24 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/OtfApiResponse'
+                $ref: '#/components/schemas/ApiResponse'
+   /execute/{executionId}:
+    get:
+      tags:
+      - Execution Service
+      operationId: getExecutionStatus
+      parameters:
+      - name: executionId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: Authorization
+        in: header
+        schema:
+          type: string
+      responses:
+        default:
+          description: default response
+          content:
+            application/json: {}
