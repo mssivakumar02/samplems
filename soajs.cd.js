@@ -20,7 +20,7 @@ let request = require("request");
 let utils = {
 	"init": (cb) => {
 		console.log("Initializing CD script");
-		//check the build environment
+		//check the build environment - integration for scans
 		if (process.env.TRAVIS) {
 			console.log("Travis build environment detected");
 			ciProvider = 'travis';
