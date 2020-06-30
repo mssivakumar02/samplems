@@ -33,6 +33,7 @@ paths:
     get:
       tags:
       - Execution Service
+      summary: Returns status of the execution
       operationId: getExecutionStatus
       parameters:
       - name: executionId
