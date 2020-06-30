@@ -7,12 +7,25 @@ basePath: /demoservice
 schemes:
   - http
 paths:
-    /getHealth:
-        get:
-            tags:
-             - Health Service
-            summary: Checks if the test control unit is available
-            operationId: getHealth
-        responses:
-            200:
-               description: OK
+#    /getHealth:
+#        get:
+#            tags:
+#             - Health Service
+#            summary: Checks if the test control unit is available
+#            operationId: getHealth
+#        responses:
+#            200:
+#               description: OK
+   /getHealth:
+    get:
+      tags:
+      - Health Service
+      summary: Checks if the test control unit is available
+      operationId: getHealth
+      responses:
+        200:
+          description: The test control unit is available
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OtfApiResponse'
